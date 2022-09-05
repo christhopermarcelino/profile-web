@@ -5,7 +5,90 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile Website</title>
-    <link rel="stylesheet" href="/style.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+
+    <!-- Styling -->
+    <link rel="stylesheet" href="./style.css" />
   </head>
-  <body></body>
+  <body>
+    <main>
+      <article class="article-overview">
+        <section class="section-overview">
+          <img src="./assets/images/self.png" alt="Photo Profile" class="photo-profile"/>
+          <div>
+            <h3>Developer</h2>
+            <h2>Christhoper Marcelino Mamahit</h2>
+            <p>3<sup>th</sup> year Informatics student, Institut Teknologi Sepuluh Nopember</p>
+            <div class="contacts">
+              <a href="mailto:christhopermarcelino@gmail.com" target="_blank">
+                <img src="./assets/icons/gmail.png" alt="Email">
+              </a>
+              <a href="https://linkedin.com/in/christhopermarcelino" target="_blank">
+                <img src="./assets/icons/linkedin.png" alt="Linkedin">
+              </a>
+              <a href="https://github.com/christhopermarcelino" target="_blank">
+                <img src="./assets/icons/github.png" alt="Github">
+              </a>
+            </div>
+          </div>
+        </section>
+      </article>
+      <article class="article-skill">
+        <section>
+          <h2>Technical Skills</h2>
+          <div class="card-skill">
+            <h4>Backend Enginerring</h4>
+            <div>
+              <img src="./assets/icons/expressjs.png" alt="Express JS">
+              <img src="./assets/icons/laravel.png" alt="Laravel">
+              <img src="./assets/icons/golang.png" alt="Go Lang">
+            </div>
+          </div>
+          <div class="card-skill">
+            <h4>Frontend Engineering</h4>
+            <div>
+              <img src="./assets/icons/reactjs.png" alt="React JS">
+              <img src="./assets/icons/tailwindcss.png" alt="Tailwind css">
+            </div>
+          </div>
+          <div class="card-skill">
+            <h4>Mobile Application Development</h4>
+            <div>
+              <img src="./assets/icons/flutter.png" alt="Flutter">
+            </div>
+          </div>
+        </section>
+      </article>
+      <article class="article-portfolio">
+        <section>
+          <h2>Portfolios</h2>
+          <div class="portfolios">
+            <a href="http://toudy.vercel.app/" target="_blank" class="card-portfolio">
+              <div class="portfolio-img portfolio-1-img"></div>
+              <!-- <img src="./assets/images/portfolio-1.png" alt="Ajarin"> -->
+              <div class="portfolio-detail">
+                <h4>Ajarin</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </a>
+            <a href="https://plasmahub.its.ac.id/" target="_blank" class="card-portfolio">
+              <div class="portfolio-img portfolio-2-img"></div>
+              <!-- <img src="./assets/images/portfolio-2.png" alt="Plasmahub"> -->
+              <div class="portfolio-detail">
+                <h4>Plasmahub</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </a>
+          </div>
+        </section>
+      </article>
+    </main>
+    <footer class="footer">
+      <p>&copy; 2022 Copyright by <strong>Marcel</strong></p>
+    </footer>
+  </body>
 </html>

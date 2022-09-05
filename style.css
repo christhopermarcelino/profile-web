@@ -1,0 +1,183 @@
+:root {
+    /* --color-dark: #222831;
+    --color-gray: #393E46;
+    --color-teal: #00ADB5;
+    --color-light: #EEEEEE; */
+
+    --color-light: #F9F7F7;
+    --color-grey: #DBE2EF;
+    --color-blue: #3F72AF;
+    --color-navy: #112D4E;
+
+    --font-extralight: 300;
+    --font-light: 300;
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semibold: 600;
+    --font-bold: 700;
+    --font-extrabold: 800;
+    --font-black: 900;
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-light);
+    color:  var(--color-navy);
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: var(--font-bold);
+}
+
+article {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+article {
+    min-height: 100vh;
+}
+
+.article-overview {
+    display: grid;
+}
+
+.article-overview .section-overview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.article-overview .section-overview img.photo-profile {
+    border-radius: 3rem;
+}
+
+.article-overview .section-overview h3 {
+    font-weight: var(--font-light);
+    font-size: 2rem;
+}
+
+.article-overview .section-overview div h2 {
+    font-weight: var(--font-bold);
+    font-size: 4rem;
+}
+
+.article-overview .section-overview div p {
+    font-weight: var(--font-regular);
+    font-size: 1.5rem;
+}
+
+.article-overview .section-overview .contacts {
+    margin-top: 3rem;
+}
+
+.article-overview .section-overview .contacts img {
+    width: 2rem;
+    height: auto;
+    margin-right: 1.5rem;
+}
+
+.article-skill section h2 {
+    text-align: center;
+    margin-bottom: 5rem;
+    font-size: 3rem;
+}
+
+.article-skill .card-skill {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.article-skill .card-skill h4 {
+    font-weight: var(--font-regular);
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.article-skill .card-skill div {
+    display: flex;
+    width: 60%;
+    margin: auto;
+    justify-content: space-around;
+}
+
+.article-skill .card-skill img {
+    height: 6rem;
+    width: auto;
+}
+
+
+.article-portfolio section h2 {
+    text-align: center;
+    margin-bottom: 5rem;
+    font-size: 3rem;
+}
+
+.article-portfolio section .portfolios {
+    display: grid;
+    grid-template-columns: 1fr 1fr;	
+    justify-content: space-around;
+    gap: 8rem;
+}
+
+.article-portfolio section .card-portfolio {
+    overflow: hidden;
+    text-decoration: none;
+    color: var(--color-navy);
+}
+
+.article-portfolio section .card-portfolio .portfolio-img {
+    width: 100%;
+    height: 24rem;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.1);
+}
+
+.article-portfolio section .card-portfolio .portfolio-1-img {
+    background-image: url("./assets/images/portfolio-1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;    
+}
+
+.article-portfolio section .card-portfolio .portfolio-2-img {
+    background-image: url("./assets/images/portfolio-2.png");
+    background-size: cover;
+}
+
+/* .article-portfolio section .card-portfolio img {
+    width: 100%;
+} */
+
+.article-portfolio section .card-portfolio .portfolio-detail {
+    padding-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.article-portfolio section .card-portfolio .portfolio-detail h4 {
+    color: var(--color-navy);
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    color: var(--color-navy);
+    font-weight: var(--font-medium);
+    text-align: center;
+    margin-top: 4rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
