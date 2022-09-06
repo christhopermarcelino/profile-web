@@ -51,6 +51,7 @@ article {
 
 .article-overview {
     display: grid;
+    background: linear-gradient(var(--color-grey), var(--color-light));
 }
 
 .article-overview .section-overview {
@@ -86,17 +87,76 @@ article {
     width: 2rem;
     height: auto;
     margin-right: 1.5rem;
+    transition: 300ms all ease-out;
+}
+
+.article-overview .section-overview .contacts img:hover {
+    width: 2.2rem;
+}
+
+.article-aboutme {
+    background: linear-gradient(var(--color-light), var(--color-grey));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.article-aboutme section {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.article-aboutme section h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 4rem;
+}
+
+.article-aboutme section p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.article-aboutme section p:hover > span {
+    text-decoration: underline;
+    font-weight: var(--font-medium);
+    transition: 1s all;
+}
+
+.article-skill {
+    background: linear-gradient(var(--color-grey), var(--color-light));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.article-skill section {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
 }
 
 .article-skill section h2 {
     text-align: center;
-    margin-bottom: 5rem;
-    font-size: 3rem;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.article-skill div.skill-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: space-between;
 }
 
 .article-skill .card-skill {
     text-align: center;
-    margin-bottom: 5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
 }
 
 .article-skill .card-skill h4 {
@@ -117,18 +177,30 @@ article {
     width: auto;
 }
 
+.article-portfolio {
+    background: linear-gradient(var(--color-light), var(--color-grey));
+    display: flex;
+    align-items: center;
+}
+
+.article-portfolio section {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
 
 .article-portfolio section h2 {
     text-align: center;
-    margin-bottom: 5rem;
-    font-size: 3rem;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .article-portfolio section .portfolios {
     display: grid;
     grid-template-columns: 1fr 1fr;	
     justify-content: space-around;
-    gap: 8rem;
+    gap: 4rem;
 }
 
 .article-portfolio section .card-portfolio {
@@ -174,10 +246,86 @@ article {
 }
 
 footer {
+    background-color: var(--color-grey);
     color: var(--color-navy);
     font-weight: var(--font-medium);
     text-align: center;
-    margin-top: 4rem;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 1200px) {
+    .article-aboutme section,
+    .article-skill section,
+    .article-portfolio section {
+        grid-template-columns: auto;
+    }
+
+    .article-aboutme section h2,
+    .article-skill section h2,
+    .article-portfolio section h2 {
+        font-size: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .article-aboutme section p {
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 992px) {
+    .article-skill .card-skill img {
+        max-height: 4.5rem;
+    }
+    .article-portfolio section .portfolios {
+        grid-template-columns: auto;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    article.article-overview section.section-overview {
+        flex-direction: column-reverse;
+    }
+    .article-overview .section-overview img.photo-profile {
+        width: 70%;
+        border-radius: 3rem;
+    }
+    
+    .article-overview .section-overview h3 {
+        font-weight: var(--font-light);
+        font-size: 2rem;
+    }
+    
+    .article-overview .section-overview div h2 {
+        font-size: 3rem;
+    }
+    
+    .article-overview .section-overview div p {
+        font-weight: var(--font-regular);
+        font-size: 1.25rem;
+    }
+    
+    .article-overview .section-overview .contacts {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .article-overview .section-overview .contacts img:hover {
+        width: 2.2rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .article-aboutme section h2,
+    .article-skill section h2,
+    .article-portfolio section h2 {
+        font-size: 2.5rem;
+    }
+    .article-skill .card-skill img {
+        max-height: 3rem;
+    }
 }
